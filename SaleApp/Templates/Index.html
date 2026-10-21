@@ -42,27 +42,32 @@
 <!-- PHẦN 2: NỘI DUNG TRANG WEB -->
 <section class="container-fluid">
     <div class="row">
-        {% for p in categories  %}
+        {% for p in categories %}
         <div class="col-md-3 col-6 p-2">
             <div class="card">
                 <img class="card-img-top" src="{{ p.image }}" alt="Card image">
                 <div class="card-body">
-                <h4 class="card-title">{{p.name}} </h4>
-                <p class="card-text">{{p.price}} VNĐ</p>
-                <a href="#" class="btn btn-primary">
-                    Xem Chi Tiết
-                </a>
-                <button class = "btn btn-danger" > Đặt hàng </button>
+                    <h4 class="card-title">{{p.name}} </h4>
+                    <p class="card-text">{{p.price}} VNĐ</p>
+                    <a href="#" class="btn btn-primary">
+                        Xem Chi Tiết
+                    </a>
+                    <button class="btn btn-danger"> Đặt hàng</button>
+                </div>
             </div>
         </div>
-    </div>
-    {% endfor %}
+        {% endfor %}
     </div>
 </section>
 
 <!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
 </script>
-
+<footer>
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1> Website Điện Thoại</h1>
+        <p>&copy;2026</p>
+    </div>
+</footer>
 </body>
 </html>
